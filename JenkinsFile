@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build'
+                git branch: 'main', credentialsId: 'gitToken', url: 'https://github.com/tarek1243/jincDemo'
             }
         }
         
